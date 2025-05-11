@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cal_login</class>
+ <widget class="QWidget" name="cal_login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="w_up" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>321</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="lb_username">
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="le_password">
+      <property name="maxLength">
+       <number>10</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>请输入密码（不到10位）</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="le_username"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lb_password">
+      <property name="text">
+       <string>密码</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>显示</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="lb_login">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>331</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_reg">
+      <property name="text">
+       <string>注册</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_login">
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_quit">
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

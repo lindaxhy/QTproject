@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>reg</class>
+ <widget class="QWidget" name="reg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lb_reg">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>注册</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="w_up" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lb_username">
+        <property name="text">
+         <string>用户名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="le_username"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="lb_confirm">
+        <property name="text">
+         <string>确认密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lb_password">
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="le_confirm">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>请再次确认密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="le_password">
+        <property name="maxLength">
+         <number>10</number>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>请输入不到10位密码</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QWidget" name="w_down" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_reg">
+        <property name="text">
+         <string>注册</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btn_return">
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
