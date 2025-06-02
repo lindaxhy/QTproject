@@ -18,7 +18,7 @@ WeatherManager::WeatherManager(QObject *parent) : QObject(parent), m_manager(new
 
 void WeatherManager::fetchWeather() {
     QString location = "101010100";
-    QString key = "a785d54dd4fe47f7bb353ed680568096";
+    QString key = "";
     QString url = QString("https://j25b6454p6.re.qweatherapi.com/v7/weather/7d?location=%1&key=%2").arg(location, key);
 
     QNetworkRequest request((QUrl(url)));
